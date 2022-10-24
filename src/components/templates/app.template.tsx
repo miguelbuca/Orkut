@@ -1,4 +1,4 @@
-import { Header } from "@components/organisms";
+import { Aside, Header } from "@components/organisms";
 import React, { FC, HTMLAttributes } from "react";
 
 export const AppTemplate: FC<HTMLAttributes<HTMLDivElement>> = ({
@@ -9,8 +9,16 @@ export const AppTemplate: FC<HTMLAttributes<HTMLDivElement>> = ({
       <div>
         <Header/>
       </div>
-      <div className="flex flex-1">
-        {children}
+      <div className="grid gap-[30px] grid-cols-[230px_1fr_230px] w-full h-full">
+        <div>
+          <Aside/>
+        </div>
+        <div>
+          {children}
+        </div>
+        <div>
+          test
+        </div>
       </div>
     </div>
   );
