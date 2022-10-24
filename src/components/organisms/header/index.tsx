@@ -8,7 +8,7 @@ import arrowDown from "@assets/svg/arrow-down.svg";
 
 export const Header = () => {
   return (
-    <div className="grid gap-[30px] grid-cols-[230px_1fr_230px] py-[40px]">
+    <div className="grid gap-[30px] grid-cols-[270px_1fr_270px] py-[40px]">
       <div className="flex justify-center items-center">
         <Image src={logo} alt="orkut-logo" />
       </div>
