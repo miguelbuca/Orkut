@@ -1,10 +1,6 @@
 import { BioCard } from '@components/organisms'
 import type { NextPage } from 'next'
 
-const Home: NextPage = () => {
-  return (
-    <BioCard/>
-  )
-}
+const Home: NextPage = () => <BioCard/>
 
 export default Home
