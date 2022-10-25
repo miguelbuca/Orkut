@@ -22,7 +22,7 @@ export const AppTemplate: FC<HTMLAttributes<HTMLDivElement>> = ({
             <div className="relative overflow-y-auto pb-[150px] h-[100vh]">
               <Aside avatar={user} menu={menu} />
             </div>
-            <div>{children}</div>
+            <div className="relative overflow-y-auto pb-[150px] h-[100vh]">{children}</div>
             <div className="relative overflow-y-auto pb-[150px] h-[100vh]">
               <div className="grid grid-rows-2 gap-[30px]">
                 <div>

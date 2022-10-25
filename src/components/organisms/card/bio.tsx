@@ -1,13 +1,24 @@
 import { CheckGroup } from "@components/molecules";
 import type { NextPage } from "next";
 import { useBioState } from "./bio.state";
+import Image from "next/image";
+
+/**
+ * static svg
+ */
+
+import heart1 from "@assets/svg/heart-1.svg";
+import heart2 from "@assets/svg/heart-2.svg";
+import star from "@assets/svg/star.svg";
+import smile from "@assets/svg/smile.svg";
+import smile1 from "@assets/svg/smile-1.svg";
 
 export const BioCard: NextPage = () => {
   const { seeMore, screenSize, handlerSeeMore } = useBioState();
 
   return (
     <div
-      className={`relative flex flex-col w-full rounded-[30px] dark:bg-dark-primary-2 p-[40px] ${screenSize}`}
+      className={`relative flex flex-col w-full overflow-hidden rounded-[30px] dark:bg-dark-primary-2 p-[40px] ${screenSize}`}
     >
       <div className="flex flex-col border-b dark:border-b-dark-primary-5">
         <div>
@@ -18,31 +29,71 @@ export const BioCard: NextPage = () => {
             <div className="text-[12pt] dark:text-dark-primary-4">
               <small>depoimentos</small>
             </div>
-            <div>2</div>
+            <div className="flex flex-row items-center mt-[9px]">
+              <div className="mr-[6px]">
+                <Image height={20} width={20} src={heart1} alt="heart-icon" />
+              </div>
+              <small>114</small>
+            </div>
           </div>
           <div>
             <div className="text-[12pt] dark:text-dark-primary-4">
               <small>fãs</small>
             </div>
-            <div>2</div>
+            <div className="flex flex-row items-center mt-[9px]">
+              <div className="mr-[6px]">
+                <Image height={20} width={20} src={star} alt="heart-icon" />
+              </div>
+              <small>15</small>
+            </div>
           </div>
           <div>
             <div className="text-[12pt] dark:text-dark-primary-4">
               <small>confiável</small>
             </div>
-            <div>2</div>
+            <div className="mr-[6px] mt-[9px] child:mr-[2px]">
+              <span>
+                <Image height={20} width={20} src={smile} alt="smile-icon" />
+              </span>
+              <span>
+                <Image height={20} width={20} src={smile} alt="smile-icon" />
+              </span>
+              <span>
+                <Image height={20} width={20} src={smile1} alt="smile1-icon" />
+              </span>
+            </div>
           </div>
           <div>
             <div className="text-[12pt] dark:text-dark-primary-4">
               <small>legal</small>
             </div>
-            <div>2</div>
+            <div className="mr-[6px] mt-[9px] child:mr-[2px]">
+              <span>
+                <Image height={20} width={20} src={heart2} alt="heart2-icon" />
+              </span>
+              <span>
+                <Image height={20} width={20} src={heart2} alt="heart2-icon" />
+              </span>
+              <span>
+                <Image height={20} width={20} src={heart2} alt="heart2-icon" />
+              </span>
+            </div>
           </div>
           <div>
             <div className="text-[12pt] dark:text-dark-primary-4">
               <small>sexy</small>
             </div>
-            <div>2</div>
+            <div className="mr-[6px] mt-[9px] child:mr-[2px]">
+              <span>
+                <Image height={20} width={20} src={heart1} alt="heart1-icon" />
+              </span>
+              <span>
+                <Image height={20} width={20} src={heart1} alt="heart1-icon" />
+              </span>
+              <span>
+                <Image height={20} width={20} src={heart1} alt="heart1-icon" />
+              </span>
+            </div>
           </div>
         </div>
       </div>
