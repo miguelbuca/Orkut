@@ -17,7 +17,7 @@ export interface AsideProps {
 
 export const Aside: FC<AsideProps> = ({ avatar, menu }) => {
   return (
-    <div className="flex flex-col rounded-[30px] w-full min-h-[500px] dark:bg-dark-primary-2 p-[40px]">
+    <div className="flex flex-col rounded-[30px] w-full min-h-[550px] dark:bg-dark-primary-2 p-[40px]">
       <div className="flex flex-col items-center border-b dark:border-b-dark-primary-5">
         <div>
           <Avatar

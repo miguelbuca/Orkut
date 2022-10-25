@@ -33,5 +33,22 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addVariant, addUtilities }) {
+      addVariant("child", "& > *");
+      addVariant("child-no-last", "& > *:not(:last-child)");
+      addVariant("child-hover", "& > *:hover");
+
+      addUtilities({
+        ".bio-gradient-1": {
+          background:
+            "linear-gradient(180deg, rgba(32, 32, 32, 0) 0%, rgba(32, 32, 32, 0.95) 48.96%)",
+        },
+        ".bio-gradient-2": {
+          background:
+            "linear-gradient(180deg, rgba(32, 32, 32, 0) 0%, rgba(32, 32, 32, 0.95) 48.96%)",
+        },
+      });
+    },
+  ],
 };
