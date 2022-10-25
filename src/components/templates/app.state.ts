@@ -23,6 +23,15 @@ import alexHarry from "@assets/svg/avatar/alex-harry.svg";
 import alexiaDoe1 from "@assets/svg/avatar/alexia-doe-1.svg";
 import maxHook from "@assets/svg/avatar/max-hook.svg";
 
+import AmigosDaO from "@assets/svg/avatar/amigos-da-o.svg";
+import OdeioAcO from "@assets/svg/avatar/odeio-ac-o.svg";
+import SimpsonsBR from "@assets/svg/avatar/simpsons-br.svg";
+import SantistasDe from "@assets/svg/avatar/santistas-de.svg";
+import TitioElon from "@assets/svg/avatar/titio-elon.svg";
+import Ilove70s from "@assets/svg/avatar/i-love-70s.svg";
+import Praia from "@assets/svg/avatar/praia.svg";
+import Drink from "@assets/svg/avatar/drink.svg";
+
 export const useAppTemplateState = () => {
   const menu: MenuType = [
     {
@@ -84,8 +93,44 @@ export const useAppTemplateState = () => {
     },
   ];
 
+  const communities: GroupItemType[] = [
+    {
+      name: "Amigos da o...",
+      img: AmigosDaO,
+    },
+    {
+      name: "Odeio aco...",
+      img: OdeioAcO,
+    },
+    {
+      name: "Simpsons BR",
+      img: SimpsonsBR,
+    },
+    {
+      name: "Santistas de...",
+      img: SantistasDe,
+    },
+    {
+      name: "Titio Elon",
+      img: TitioElon,
+    },
+    {
+      name: "i love 70's",
+      img: Ilove70s,
+    },
+    {
+      name: "Praia",
+      img: Praia,
+    },
+    {
+      name: "Drink",
+      img: Drink,
+    },
+  ];
+
   return {
     menu,
     friends,
+    communities,
   };
 };
