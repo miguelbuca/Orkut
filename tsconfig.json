@@ -21,7 +21,7 @@
       "@components/*": ["src/components/*"],
       "@contexts/*": ["src/contexts/*"],
       "@interfaces/*": ["src/interfaces/*"],
-      "@hooks/*": ["src/utils/*"],
+      "@hooks/*": ["src/hooks/*"],
       "@reduxStore/*": ["src/utils/*"],
       "@utils/*": ["src/utils/*"],
       "@styles/*": ["src/styles/*"],

@@ -1,6 +1,8 @@
 import React, { FC } from "react";
 import Image from "next/image";
 import selo from "@assets/svg/selo.svg";
+import selo1 from "@assets/svg/selo-1.svg";
+import { useMode } from "@hooks/useMode";
 
 export type GroupItemType = {
   img: string;
@@ -15,8 +17,10 @@ export interface GroupCardProps {
 }
 
 export const GroupCard: FC<GroupCardProps> = ({ title, length, data }) => {
+  const { mode } = useMode();
+
   return data.length > 0 ? (
-    <div className="w-full rounded-[30px] dark:bg-dark-primary-2 p-[40px]">
+    <div className="w-full rounded-[30px] border dark:border-transparent bg-white dark:bg-dark-primary-2 p-[40px]">
       <div className="flex flex-row items-center">
         <span className="flex-1">
           <small>
@@ -42,7 +46,9 @@ export const GroupCard: FC<GroupCardProps> = ({ title, length, data }) => {
                 alt="avatar"
               />
               <div className="absolute left-[18px] bottom-[-9px]">
-                {useSelo && <Image src={selo} alt="selo" />}
+                {useSelo && (
+                  <Image src={mode === "dark" ? selo : selo1} alt="selo" />
+                )}
               </div>
             </div>
             <div>

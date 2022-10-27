@@ -11,7 +11,7 @@ export const SearchInput: FC<HtmlHTMLAttributes<HTMLInputElement>> = ({
         <Image height={18} width={18} src={search} alt="search-icon"/>
       </div>
       <input
-        className="px-[42px] placeholder:text-dark-primary-4 h-[40px] text-[14px] outline-none w-full border border-dark-primary-3 rounded-full dark:bg-dark-primary-2"
+        className="px-[42px] placeholder:text-dark-primary-4 h-[40px] text-[14px] outline-none w-full border bg-white dark:border-dark-primary-3 rounded-full dark:bg-dark-primary-2"
         {...args}
       />
     </div>
