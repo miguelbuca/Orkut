@@ -10,7 +10,7 @@ export const AppTemplate: FC<HTMLAttributes<HTMLDivElement>> = ({
   const { menu, friends, communities } = useAppTemplateState();
 
   return (
-    <div className="fixed flex flex-col w-full h-full dark:bg-dark-primary-1 dark:text-dark-font">
+    <div className="fixed flex flex-col w-full h-full bg-light-primary-1 dark:bg-dark-primary-1 dark:text-dark-font">
       <div className="flex flex-col container">
         <div className="flex items-center w-full">
           <div className="w-full">

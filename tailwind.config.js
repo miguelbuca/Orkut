@@ -28,6 +28,20 @@ module.exports = {
           },
           font: "#CCCCD2",
         },
+        light: {
+          primary: {
+            1: "#F7FAFC",
+            2: "#202020",
+            3: "#202020",
+            4: "#888888",
+            5: "#444444",
+          },
+          secondary: {
+            1: "#0094FF",
+            2: "#ED2590",
+          },
+          font: "#CCCCD2",
+        },
         white: "#ffffff",
         black: "#000000",
       },
@@ -46,7 +60,7 @@ module.exports = {
         },
         ".bio-gradient-2": {
           background:
-            "linear-gradient(180deg, rgba(32, 32, 32, 0) 0%, rgba(32, 32, 32, 0.95) 48.96%)",
+           "linear-gradient(180deg, rgba(32, 32, 32, 0) 0%, rgba(255, 255, 255, 0.85) 48.96%)",
         },
       });
     },

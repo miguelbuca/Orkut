@@ -25,8 +25,8 @@ export const Header = () => {
           <Image height={40} width={40} src={user} alt="user-avatar" />
         </div>
         <div className="flex flex-col justify-center min-w-[50%] mx-[8px]">
-          <strong>Jane Doe</strong>
-          <small className="dark:text-dark-primary-4 mt-[-.3rem]">@therealjanedoe</small>
+          <span className="ml-[4px]">Jane Doe</span>
+          <small className="text-dark-primary-4 mt-[-.3rem]">@therealjanedoe</small>
         </div>
         <div className="flex items-center justify-center">
           <Image src={arrowDown} alt="arrow-dwon"/>
